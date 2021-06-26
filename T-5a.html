@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix</title>
+    <style>
+        body{
+            padding: 0px;
+            margin: 0px;
+            background-color: rgb(35,35,33);
+                
+        }
+        .navbar{
+            height: 130px;
+            width: 100%;
+            background: #000;
+            margin-top: -35px;
+        }
+        .navbar h1{
+            color: red;
+            font-size: 75px;
+            font-style: bold;
+            top: -35px;
+            left: 10px;
+            position: absolute;
+            padding-bottom: 30px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            display: block;
+            perspective: 1000px;
+            perspective-origin: 50% 0;
+            transform-origin: 0 0;
+            /* transform: scaleX(50) rotateX(40deg); */
+        }
+        .second{
+            /* width: 250px; */
+            /* height: 0px; */
+            float: left;
+        }
+        .first{
+            float: left;
+        }
+        .menu{
+            position: absolute;
+            left: 48%;
+            top: 45px;
+            font-size: 25px;
+            word-spacing: 10px;
+            /* text-decoration: underline; */
+        }
+        .menu a{
+            color: #fff;
+            text-decoration: none;
+            word-spacing: 30px;
+        }
+        .menu a:hover{
+            color: rgb(216, 11, 11);
+            font-size: 27px;
+            /* text-decoration: underline; */
+        }
+        .menu2{
+            position: absolute;
+            left: 80%;
+            top: 35px;
+            font-size: 30px;
+            /* word-spacing: 15px; */
+        }
+        .menu2 a{
+            color: #fff;
+            text-decoration: none;
+            word-spacing: 15px;
+            margin-left: 10px;
+        }
+        table{
+            margin-left: 20px;
+        }
+        .first a img{
+            /* margin: left 5px; */
+            /* width: 23%; */
+             padding: 4.9px; 
+            border: 1px solid rgb(255, 255, 255);
+            border-radius: 3px;
+            margin: 3px; 
+        }
+        .second a img{
+            /* margin: left 5px; */
+            /* width: 23%; */
+            padding: 4.9px;
+            border: 1px solid rgb(255, 255, 255);
+            border-radius: 3px;
+            margin: 2px;
+        }
+        h1{
+            color: #fff;
+            margin-left: 0px;
+        }
+        .the{
+            border: 2px solid red;
+            border-radius: 5px;
+        }
+        #action{
+            color: rgb(255, 255, 255);
+            font-size: 25px;
+            margin-left: 8px;
+        }
+        #action2{
+            color: rgb(255, 255, 255);
+            font-size: 25px;
+            margin-left: 8px;
+        }
+        #drama{
+            color: white;
+            font-size: 40px;
+            /* padding: 8px; */
+            margin-left: 8px;
+            margin-top: 20px;
+        }
+        #Web{
+            color: rgb(255, 255, 255);
+            font-size: 25px;
+            margin-left: 8px;}
+            .second3{
+                image-resolution: 250px;
+            }
+        .third a img{
+        /* position: absolute; */
+        padding: 4.9px;
+            border: 1px solid rgb(255, 255, 255);
+            border-radius: 3px;
+            margin: 2px;
+        }
+        #Anim{
+            color: rgb(255, 255, 255);
+            font-size: 25px;
+            margin-left: 8px;}
+            .Fourth{
+                image-resolution: 250px;
+         }
+        .Fourth a img{
+        /* position: absolute; */
+        padding: 4.9px;
+            border: 1px solid rgb(255, 255, 255);
+            border-radius: 3px;
+            margin: 2px;
+        }
+        #Browse{
+            color: rgb(255, 0, 0);
+            position: absolute;
+            left: 20%;
+            top: 57px;
+            font-size: 25px;
+            text-decoration: none;
+            font-size: 30px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+    #sm{
+        color: rgb(204, 192, 192);
+            position: absolute;
+            left: 80%;
+            top: 45px;
+            font-size: 25px;
+            text-decoration: none;
+            border:2px solid white;
+            /* border-radius: 10px; */
+            border-bottom-left-radius: 10px;
+            background-color: white;
+            /* margin: 5px 5px; */
+            /* padding: 5px 5px; */
+            padding-left: 20px;
+            padding-right: 20px;
+            box-sizing: content-box;
+            cursor: text;
+    }
+    #mhh{
+        color: rgb(5, 5, 5);
+        position: absolute;
+            left: 88.7%;
+            top: 45px;
+            font-size: 20px;
+            text-decoration: none;
+            border:2px solid white;
+            /* border-radius: 10px; */
+            border-bottom-right-radius: 10px;
+            background-color: white;
+            padding-top: 2px;
+            padding-bottom: 2.2px;
+            padding-left: -1px;
+            padding-right: -1px;
+    }
+    </style>
+</head>
+<body>
+    <div class="navbar" >
+        <h1>Netflix</h1>
+    </div>
+    <div >
+        <a href="" id="Browse">Browse</a> 
+    </div>
+    <div>
+        <a href="" id="sm" >Search</a>
+        <a href="" id="mhh" >Search</a>
+    </div>
+    <div class="menu">
+        <a href="" id="active">Home</a>
+        <a href="" id="">Web-Shows</a>
+        <a href="" id="">Films</a>
+        <a href="" id="">Category</a>
+    </div>
+    <div class="menu2">
+        <a href="#"><i class="fa fa search"></i></a>
+        <a href="#"><i></i></a>
+        <a href="#"><i class="fa fa bell"></i></a>
+    </div>
+    <h1 id="drama">Dramas..</h1>
+    <div class="the">
+        <a href="#"><img src="mam/img4.jpg" alt="" srcset=""     width="100%" height="600px"></a>
+    </div>
+    <!-- <hr> -->
+    <h3 id="action" >Action & Adventure</h3>
+    <div class="first">
+        <table>
+            <tr>
+                <a href=""><img src="mam/img10.jpg" alt="" srcset="" width="296px"></a>
+                <a href="mam/a6.mp4"><img src="mam/img1.jpg" alt="" srcset="" width="350px"></a>
+                <a href="mam/a7.mp4"><img src="mam/img2.jpg" alt="" srcset=""width="310px"></a>
+                <a href="mam/a8.mp4"><img src="mam/img3.jpg" alt="" srcset=""width="310px"></a>
+            </tr>
+        </table>
+    </div>
+</body>
+<h3 id="action2" >Action Movies</h3>
+<div class="second">
+    <table>
+        <tr>
+            <a href="store"><img src="mam/img5.jpg" alt="" srcset="" width="310px"></a>
+            <a href="store"><img src="mam/img6.jpg" alt="" srcset="" width="310px"></a>
+            <a href="store"><img src="mam/img7.jpg" alt="" srcset="" width="350px"></a>
+            <a href="store"><img src="mam/img9.jpg" alt="" srcset="" width="310px"></a>
+        </tr>
+    </table>
+    <h3 id="Web" >Web-Shows</h3>
+<div class="third">
+    <table>
+        <tr>
+            <a href="store"><img src="mam/Game of.jfif" alt="" srcset="" width="316px"></a>
+            <a href="store"><img src="mam/web/32dde286-96dc-49d8-b962-0d1dec8baec5.sized-1000x1000.jpg" alt="" srcset="" width="315px"></a>
+            <a href="store"><img src="mam/web/Vikings-Valhalla.jpg" alt="" srcset="" width="315px"></a>
+            <a href="store"><img src="mam/the-shannara-chronicles-poster.jpg" alt="" srcset="" width="330px"  height="177px"></a>
+        </tr>
+    </table>
+    <h4 id="Anim" >Animation</h4>
+<div class="Fourth">
+    <table>
+        <tr>
+            <a href="store"><img src="mam/kunfu.jpg" alt="" srcset="" width= "315px"></a>
+            <a href="store"><img src="mam/incrideble.jpeg" alt="" srcset="" width="315px" height="177px"></a>
+            <a href="store"><img src="mam/groot.jpg" alt="" srcset="" width="315px" height="177px"></a>
+            <a href="store"><img src="mam/boss.jpg" alt="" srcset="" width="330px"  height=" 177px"></a>
+        </tr>
+    </table>
+</div>
+</body>
+</html>
